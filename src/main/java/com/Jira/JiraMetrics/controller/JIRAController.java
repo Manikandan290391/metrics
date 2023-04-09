@@ -11,6 +11,7 @@ import java.io.IOException;
 
 @Controller
 @RequiredArgsConstructor
+@RequestMapping("/")
 public class JIRAController {
     CreateExcel createExcel = new CreateExcel();
     private final JiraService jiraService;
@@ -37,9 +38,19 @@ public class JIRAController {
         createExcel.createExcel(jiraService.getAllCountryCovidData(formData.getEmail()).toString());
         return  "test";
     }
-    @GetMapping(value="/metrics")
+    @GetMapping(value = "/metrics")
     public String metricsPage()  {
 
         return  "metrics";
+    }
+    @GetMapping(value = "/forleads")
+    public String forLeadsPage()  {
+
+        return  "forleads";
+    }
+    @GetMapping(value = "/dsrconfluence")
+    public String dsrconfluencePage()  {
+
+        return  "confluence";
     }
 }

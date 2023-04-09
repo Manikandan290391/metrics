@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
 
   <head>
 
@@ -50,10 +51,10 @@ https://templatemo.com/tm-557-grad-school
             <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
           </ul> -->
         </li>
-        <li><a href="metrics.html" class="external">Metrics</a></li>
-        <li><a href="forleads.html" class="external">For Leads</a></li>
+        <li><a href="#" th:href="@{/metrics}" class="external">Metrics</a></li>
+        <li><a href="forleads.html" th:href="@{/forleads}"  class="external">For Leads</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
-        <li><a href="confluence.html" class="external">Confluence</a></li>
+        <li><a href="confluence.html"th:href="@{/dsrconfluence}" class="external">Confluence</a></li>
         <!-- <li><a href="https://templatemo.com" class="external">External</a></li> -->
       </ul>
     </nav>
@@ -446,7 +447,7 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-md-6">
         
-        <!-- Do you need a working HTML contact-form script?
+         Do you need a working HTML contact-form script?
                 	
                     Please visit https://templatemo.com/contact page -->
                     
