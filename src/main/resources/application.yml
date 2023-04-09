@@ -1,0 +1,6 @@
+rapidAPI:
+  covid:
+    data:
+      url: https://reqres.in/api/users/
+      xRapidApiKey: <YourAPIKey>
+      getxRapidApiHost: <YourAPIHost>
